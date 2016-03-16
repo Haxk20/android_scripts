@@ -1,6 +1,3 @@
-#Get prebuilts
-echo "Getting prebuilts..."
-cd vendor/cm && ./get-prebuilts && cd ../..
 #Compile
 if [[ $# = 1 ]]; then
   . build/envsetup.sh
@@ -40,7 +37,7 @@ if [[ $# = 1 ]]; then
       exit -1;
     ;;
     esac
-  else 
+  else
     echo "ERROR: . build/envsetup.sh falied"
     exit -1;
   fi
