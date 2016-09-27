@@ -5,7 +5,7 @@ Helpful scripts for build CM12.1
 
 QuickStart:
 
-    git clone https://github.com/XperiaSTE/android_scripts.git -b cm-12.1 xste;
+    git clone https://github.com/cbnuke/android_scripts.git -b cm-12.1 xste;
     cd xste;
     repo init -u git://github.com/CyanogenMod/android -b cm-12.1;
     ./Update.sh;
@@ -13,16 +13,16 @@ QuickStart:
     ./CompileROM.sh -u; (Xperia U)
     ./CompileROM.sh -p; (Xperia P)   
     ./CompileROM.sh -s; (Xperia Sola)
-    ./CompileROM.sh -g; (Xperia Go) 
+    ./CompileROM.sh -g; (Xperia Go)
 
 OpenDelta Updater:
 
-	For OpenDelta Configurator: ./ODConfig.sh versionnumber; 
+	For OpenDelta Configurator: ./ODConfig.sh versionnumber;
 	About the versionnumber you need to use current build version.
-	If you want to make the build 14 type 14 (./ODConfig.sh 14;) 
+	If you want to make the build 14 type 14 (./ODConfig.sh 14;)
 
 Credits:
-    
+
     @munjeni: Kernel, porting Android Kitkat to Xperia 2012 devices and bugfix
     @DevSwift: Develop on Xperia 2012 devices and bugfix
     @percy-g2: Support and bugfix
