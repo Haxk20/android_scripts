@@ -1,36 +1,39 @@
+#Get prebuilts <= cm11
+#echo "Getting prebuilts..."
+#cd vendor/cm && ./get-prebuilts && cd ../..
 #Compile
 if [[ $# = 1 ]]; then
   . build/envsetup.sh
   if [[ $? = 0 ]]; then
-    # Use local Java Development Kit 6
-    if (( $(java -version 2>&1 | grep version | cut -f2 -d".") > 6 )); then
-       echo "Using local JDK 6..."
-       export JAVA_HOME=$(realpath ../jdk1.6.0_45);
+    # Check local Java Development Kit
+    if (( $(java -version 2>&1 | grep version | cut -f2 -d".") < 7 )); then
+       echo "Request JDK >= 7 ..."
+       exit
     fi
     case $1 in
     -u)
-      lunch cm_kumquat-eng && make -j8 otapackage;
+      lunch cm_kumquat-eng && mka bacon;
     ;;
     -ru)
-      lunch cm_kumquat-userdebug && make -j8 otapackage;
+      lunch cm_kumquat-userdebug && mka bacon;
     ;;
     -p)
-      lunch cm_nypon-eng && make -j8 otapackage;
+      lunch cm_nypon-eng && mka bacon;
     ;;
     -rp)
-      lunch cm_nypon-userdebug && make -j8 otapackage;
+      lunch cm_nypon-userdebug && mka bacon;
     ;;
     -s)
-      lunch cm_pepper-eng && make -j8 otapackage;
+      lunch cm_pepper-eng && mka bacon;
     ;;
     -rs)
-      lunch cm_pepper-userdebug && make -j8 otapackage;
+      lunch cm_pepper-userdebug && mka bacon;
     ;;
     -g)
-      lunch cm_lotus-eng && make -j8 otapackage;
+      lunch cm_lotus-eng && mka bacon;
     ;;
     -rg)
-      lunch cm_lotus-userdebug && make -j8 otapackage;
+      lunch cm_lotus-userdebug && mka bacon;
     ;;
     *)
       echo "ERROR: Unknow option";
