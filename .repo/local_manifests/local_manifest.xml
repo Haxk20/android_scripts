@@ -7,25 +7,25 @@
   <remote name="googlecode"
           fetch="https://code.google.com/p/" />
 
-  <remove-project name="CyanogenMod/android_bionic" />
-  <remove-project name="CyanogenMod/android_build" />
-  <remove-project name="CyanogenMod/android_bootable_recovery" />
-  <remove-project name="CyanogenMod/android_external_bluetooth_bluedroid" />
-  <remove-project name="CyanogenMod/android_external_wpa_supplicant_8" />
-  <remove-project name="CyanogenMod/android_external_icu" />
-  <remove-project name="CyanogenMod/android_frameworks_av" />
-  <remove-project name="CyanogenMod/android_frameworks_base" />
-  <remove-project name="CyanogenMod/android_frameworks_native" />
-  <remove-project name="CyanogenMod/android_hardware_libhardware" />
-  <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
-  <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
-  <remove-project name="CyanogenMod/android_packages_apps_Bluetooth" />
-  <remove-project name="CyanogenMod/android_packages_apps_BluetoothExt" />
-  <remove-project name="CyanogenMod/android_packages_apps_Eleven" />
-  <remove-project name="CyanogenMod/android_packages_apps_Settings" />
-  <remove-project name="CyanogenMod/android_packages_services_Telecomm" />
-  <remove-project name="CyanogenMod/android_system_core" />
-  <remove-project name="CyanogenMod/android_vendor_cm" />
+  <remove-project name="LineageOS/android_bionic" />
+  <remove-project name="LineageOS/android_build" />
+  <remove-project name="LineageOS/android_bootable_recovery" />
+  <remove-project name="LineageOS/android_external_bluetooth_bluedroid" />
+  <remove-project name="LineageOS/android_external_wpa_supplicant_8" />
+  <remove-project name="LineageOS/android_external_icu" />
+  <remove-project name="LineageOS/android_frameworks_av" />
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <remove-project name="LineageOS/android_frameworks_native" />
+  <remove-project name="LineageOS/android_hardware_libhardware" />
+  <remove-project name="LineageOS/android_hardware_libhardware_legacy" />
+  <remove-project name="LineageOS/android_packages_apps_CMUpdater" />
+  <remove-project name="LineageOS/android_packages_apps_Bluetooth" />
+  <remove-project name="LineageOS/android_packages_apps_BluetoothExt" />
+  <remove-project name="LineageOS/android_packages_apps_Eleven" />
+  <remove-project name="LineageOS/android_packages_apps_Settings" />
+  <remove-project name="LineageOS/android_packages_services_Telecomm" />
+  <remove-project name="LineageOS/android_system_core" />
+  <remove-project name="LineageOS/android_vendor_cm" />
   
   <project path="bionic" name="XperiaSTE/android_bionic" />
   <project path="build" name="cbnuke/android_build" > <copyfile src="core/root.mk" dest="Makefile" /> </project>
@@ -40,7 +40,7 @@
   <project path="external/wpa_supplicant_8" name="cbnuke/android_external_wpa_supplicant_8" />
   <project path="external/bluetooth/glib" name="XperiaSTE/android_external_bluetooth_glib" revision="master" groups="pdk" />
   <project path="external/bluetooth/sbc" name="bluetooth/sbc" remote="kernel"     revision="master" groups="pdk" />
-  <project path="frameworks/av" name="XperiaSTE/android_frameworks_av" revision="test" />
+  <project path="frameworks/av" name="Haxk20/android_frameworks_av" revision="cm-12.1" />
   <project path="frameworks/base" name="cbnuke/android_frameworks_base" />
   <project path="frameworks/native" name="cbnuke/android_frameworks_native" />
   <project path="hardware/libhardware" name="XperiaSTE/android_hardware_libhardware" />
